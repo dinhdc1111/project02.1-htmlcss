@@ -614,7 +614,41 @@ a {
 .started .desc-started {
     margin-bottom: 0;
 }
-/* Test */
-.main {
-    height: 5000px;
+
+/* Footer */
+.footer .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+}
+
+.footer .main-content .footer-title {
+    color: #2E2E2E;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 26px;
+}
+
+.footer .footer-list .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-list .footer-item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    color: #B0B5B4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 60px 0 50px;
 }
