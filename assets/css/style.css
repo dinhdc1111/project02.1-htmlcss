@@ -40,6 +40,15 @@ a {
     line-height: 1.6;
 }
 
+.big-title {
+    margin: 18px 0;
+    max-width: 577px;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+
 /* Header */
 .header.fixed-header {
     position: sticky;
@@ -295,19 +304,11 @@ a {
 
 /* Features */
 .features {
-    padding-top: 130px;
+    padding: 130px 0;
 }
 
-.features .title-features {
-    margin: 18px 0;
-    max-width: 577px;
-    color: #0D1111;
-    font-size: 4.2rem;
-    font-weight: 700;
-    line-height: 1.33;
-}
-
-.features .desc-features {
+.features .desc-features,
+.courses .desc-courses {
     max-width: 590px;
     color: #767E7E;
     font-size: 1.8rem;
@@ -341,9 +342,122 @@ a {
     font-weight: 400;
     line-height: 1.68;
 }
-.features .feature-item:first-child .feature-item-desc{
+
+.features .feature-item:first-child .feature-item-desc {
     max-width: 168px;
 }
+
+/* Courses */
+.popular-courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-courses .view-all-courses {
+    margin-bottom: 80px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.courses .courses-group {
+    display: flex;
+    gap: 47px;
+}
+
+.courses .courses-group .course-item {
+    position: relative;
+}
+
+.courses-group .course-item .course-image img {
+    max-width: 359px;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #D0EFED;
+}
+
+.courses-group .course-item .course-info {
+    position: absolute;
+    left: 17px;
+    bottom: -127px;
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    padding: 18px 25px 29px;
+}
+
+.courses-group .course-info .course-name {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.courses-group .course-info .course-fee {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin: 16px 0 6px;
+}
+
+.courses-group .course-fee .course-title {
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.courses-group .course-fee .course-price {
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses-group .course-info .course-desc {
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.courses-group .course-info .course-train {
+    display: flex;
+}
+
+.courses-group .course-train .course-class,
+.courses-group .course-train .course-time {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.courses-group .course-train .course-class::before,
+.courses-group .course-train .course-time::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-right: 10px;
+}
+
+.courses-group .course-train .course-time::before {
+    margin-left: 10px;
+}
+
 /* Test */
 .main {
     height: 5000px;
