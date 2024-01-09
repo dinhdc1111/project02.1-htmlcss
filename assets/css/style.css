@@ -392,6 +392,20 @@ a {
     background: #FFF;
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
     padding: 18px 25px 29px;
+    cursor: pointer;
+}
+
+.courses-group .course-item:hover img {
+    opacity: 0.9;
+    transition: all 0.5s ease-in;
+}
+
+.courses-group .course-item .course-info {
+    transition: transform 0.5s ease;
+}
+
+.courses-group .course-item .course-info:hover {
+    transform: translateY(-50px);
 }
 
 .courses-group .course-info .course-name {
