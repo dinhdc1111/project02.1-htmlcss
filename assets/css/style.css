@@ -308,7 +308,8 @@ a {
 }
 
 .features .desc-features,
-.courses .desc-courses {
+.courses .desc-courses,
+.started .desc-started {
     max-width: 590px;
     color: #767E7E;
     font-size: 1.8rem;
@@ -598,6 +599,21 @@ a {
     bottom: 29px;
 }
 
+/* Get started */
+.started {
+    background: #DEF6F5;
+    padding: 76px 0 88px;
+}
+
+.started .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.started .desc-started {
+    margin-bottom: 0;
+}
 /* Test */
 .main {
     height: 5000px;
