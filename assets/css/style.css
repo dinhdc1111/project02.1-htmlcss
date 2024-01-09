@@ -367,6 +367,7 @@ a {
 .courses .courses-group {
     display: flex;
     gap: 47px;
+    padding-bottom: 389px;
 }
 
 .courses .courses-group .course-item {
@@ -470,6 +471,131 @@ a {
 
 .courses-group .course-train .course-time::before {
     margin-left: 10px;
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 264px;
+}
+
+.countdown .countdown-data {
+    color: #0D1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.countdown .countdown-title {
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Feedback */
+.feedback {
+    display: flex;
+    gap: 72px;
+    padding-bottom: 130px;
+}
+
+.feedback .testimonial-list {
+    max-width: 419px;
+    padding: 37px 0;
+}
+
+.feedback .testimonial-list .double-quotes img {
+    width: 36px;
+}
+
+.feedback .testimonial-list .testimonial {
+    color: #5D6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 27px 0 33px;
+}
+
+.feedback .testimonial-list .responder {
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 52px;
+}
+
+.feedback .testimonial-list .responder .name-student {
+    color: #070707;
+    font-weight: 600;
+}
+
+.feedback .testimonial-list .control-btn-group {
+    display: flex;
+    gap: 30px;
+}
+
+.feedback .control-btn-group .previous,
+.feedback .control-btn-group .next {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feedback .list-avatar-students {
+    flex: 1;
+    position: relative;
+}
+
+.feedback .list-avatar-students img {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback .list-avatar-students img:first-child {
+    top: 0;
+    left: 144px;
+    width: 92px;
+    height: 92px;
+}
+
+.feedback .list-avatar-students img:nth-child(2) {
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.feedback .list-avatar-students img:nth-child(3) {
+    top: 107px;
+    right: 171px;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback .list-avatar-students img:nth-child(4) {
+    left: 0;
+    bottom: 145px;
+}
+
+.feedback .list-avatar-students img:nth-child(5) {
+    right: 389px;
+    bottom: 0;
+}
+
+.feedback .list-avatar-students img:last-child {
+    right: 32px;
+    bottom: 29px;
 }
 
 /* Test */
