@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    --primary-color: #1EBFC1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #2F3A3B;
+}
+
+.btn {
+    padding: 20px 41px 21px;
+    display: inline-block;
+    border-radius: 14px;
+    background: #2AC9BF;
+    color: #fff;
+}
+
+/* Header */
+.header.fixed-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 57px 0 56px;
+    height: 90px;
+}
+
+.menu .menu-list {
+    display: flex;
+    gap: 39px;
+}
+
+.menu-list .menu-item a {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.menu-list .menu-item a::before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.menu-list .menu-item:hover a {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.btn-group .btn-signin {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-group .btn-signin::before {
+    content: "Sign in";
+    display: block;
+    font-weight: 600;
+    height: 0;
+    visibility: hidden;
+}
+
+.btn-group .btn-signin:hover {
+    font-weight: 600;
+}
+
+.btn-group .btn-signup {
+    margin-left: 14px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn-group .btn-signup:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    margin-top: 93px;
+    max-width: 458px;
+}
+
+.banner-content .easy-desc {
+    color: #767E7E;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.banner-content .banner-title {
+    color: #0D1111;
+    font-family: Poppins;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.16;
+    margin: 18px 0 46px;
+}
+
+.banner-content .desc {
+    max-width: 374px;
+    color: #9DA6A5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77;
+    margin-bottom: 52px;
+}
+
+.banner-content .btn-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content .btn-group .btn-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.illustrating-images .banner-image img {
+    width: 576px;
+    max-height: 631px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.illustrating-images {
+    position: relative;
+}
+
+.illustrating-images .course-icon,
+.illustrating-images .schedules-icon,
+.illustrating-images .active-students {
+    position: absolute;
+}
+
+.illustrating-images .course-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    top: 149px;
+    left: -40px;
+    padding: 17px 25px 18px;
+    border-radius: 18px;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.illustrating-images .course-icon .icon-image::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 4px;
+    top: 31px;
+    height: 4px;
+    width: 28px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.illustrating-images .course-icon .desc-icon,
+.illustrating-images .schedules-icon .desc-icon,
+.illustrating-images .active-students .desc-icon {
+    color: #0D1111;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.illustrating-images .course-icon .desc-icon,
+.illustrating-images .schedules-icon .desc-icon {
+    max-width: 55px;
+}
+
+.illustrating-images .schedules-icon {
+    left: -66px;
+    bottom: 65px;
+    border-radius: 24px;
+    padding: 16px 25px 23px;
+    background: #FFF;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.illustrating-images .schedules-icon .desc-icon {
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.illustrating-images .schedules-icon img {
+    display: block;
+    padding-bottom: 12px;
+    margin: 0 auto;
+}
+
+.illustrating-images .schedules-icon img:last-child {
+    padding-bottom: 0;
+}
+
+.illustrating-images .students-image {
+    display: flex;
+    margin-top: 8px;
+}
+
+.illustrating-images .students-image img,
+.illustrating-images .avatar-more {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -7px;
+}
+
+.illustrating-images .avatar-more {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+
+.illustrating-images .students-image img:first-child {
+    margin-left: 0;
+}
+
+.illustrating-images .active-students {
+    right: 45px;
+    bottom: 41px;
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #FEFEFD;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Test */
+.main {
+    height: 5000px;
+    background-color: #d1ec56;
+}
