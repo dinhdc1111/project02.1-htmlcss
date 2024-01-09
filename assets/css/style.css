@@ -31,6 +31,15 @@ a {
     color: #fff;
 }
 
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #767E7E;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
 /* Header */
 .header.fixed-header {
     position: sticky;
@@ -116,6 +125,7 @@ a {
 .banner {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 79px;
 }
 
 .banner-content {
@@ -283,8 +293,58 @@ a {
     box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
+/* Features */
+.features {
+    padding-top: 130px;
+}
+
+.features .title-features {
+    margin: 18px 0;
+    max-width: 577px;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+
+.features .desc-features {
+    max-width: 590px;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+.features .features-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .feature-item {
+    flex: 1;
+}
+
+.features .feature-item-title {
+    margin: 26px 0 16px;
+    color: #0D1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.features .feature-item-desc {
+    max-width: 233px;
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.68;
+}
+.features .feature-item:first-child .feature-item-desc{
+    max-width: 168px;
+}
 /* Test */
 .main {
     height: 5000px;
-    background-color: #d1ec56;
 }
